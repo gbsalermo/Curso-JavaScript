@@ -20,7 +20,20 @@ function meuEscopo(){
         const peso = form.querySelector('.peso');
         const altura = form.querySelector('.altura');
 
-        console.log(nome.value, sobrenome, peso, altura);
+        
+        //Guardar valores no array criando um objeto para cada um deles e depois imprimir num paragrafo la no html
+        
+        pessoas.push({
+            nome: nome.value,
+            sobrenome: sobrenome.value,
+            peso: peso.value,
+            altura: altura.value
+        });
+
+        console.log(pessoas);
+
+        resultado.innerHTML += `<p> ${nome.value} ${sobrenome.value} ` + 
+        `${peso.value} ${altura.value} </p>`;
         
         /*evento.preventDefault();
         console.log('Form não foi enviado');*/
