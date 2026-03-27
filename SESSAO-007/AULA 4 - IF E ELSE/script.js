@@ -1,11 +1,11 @@
 
-
+//Primeira parte da aula
 //if pode ser usado sozinho
 // Sempre ao usar op else necessito de algum if antes
 //Posso ter quantos else ifs que eu quiser e apenas um else na checagem
 //Posso criar condições sem else if, utilizando apenas if e else
 
-const hora = 50; //criando uma variavel hora que indica 10 da manha
+//const hora = 50; //criando uma variavel hora que indica 10 da manha
 
 /*if(hora < 12){ //Aqui uso if simnples para checar a condição da hora
     console.log('Bom dia!');
@@ -28,7 +28,7 @@ if(hora >= 0 && hora <= 11){ //Pego o bloco completo de 11 ate 11:59
 } */
 
 //posso usar uma codição só
-
+/*
 const tenhoGrana = true;
 
 if(tenhoGrana){
@@ -45,5 +45,25 @@ const temDin = NaN; //Me retorna false, ou seja, não vai sair nada
 if(temDin != true){ //Aqui está saindo pois coloquei a condição de ser diferente de true
     console.log('Não vou sair de casa');
 } 
+*/
 
+//Segunda parte da aula
+//O if executa a primeira condicional verdadeira e após isso sai do laço
+//A checagem é da esquerda para a direita de cima para baixo
 
+const num = 10;
+
+if(num >= 0 && num <= 5){
+    console.log('O número está entre 0 e 5'); //Nada vai ser executado pois o numero não esta entre 0 e 5
+} else{
+    console.log('O número NÃO está entre 0 e 5'); //Adiciono um else para que execute caso não atenda a condicional
+}
+
+/*Porém, eu poderia colocar o if apenas como uma condição sozinha, 
+como não me retorna nada posso usar um console.log normal fora da condicional que vai ser executado de qualquer forma
+assim, o js só vai me retornar o if se a condição fosse atendida
+*/
+if(num >= 0 && num <= 5){
+    console.log('O número está entre 0 e 5'); //Nada vai ser executado pois o numero não esta entre 0 e 5
+} 
+console.log('O número NÃO está entre 0 e 5'); //Executa de qualquer forma
