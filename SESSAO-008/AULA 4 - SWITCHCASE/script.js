@@ -44,7 +44,7 @@ function getDayWeek(diaSemana){
 //Preciso setar a variavel diaSemanaTexto na função
 let diaSemanaTexto;
 
-witch (diaSemana){
+switch (diaSemana){
     case 0:
         diaSemanaTexto = 'Domingo';
         //O return faz o mesmo papel do break nesse caso
