@@ -58,3 +58,8 @@ form button:hover{
 form button:active{
     background: rgb(10, 1, 65);
 }
+/*h1 para o exercicio de date*/
+h1{
+    font-size: 40px;
+    line-height: 1;
+}
