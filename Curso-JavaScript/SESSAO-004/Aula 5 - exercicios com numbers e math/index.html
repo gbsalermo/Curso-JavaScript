@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     let n = prompt("Digite um numero: ");
+      document.body.innerHTML += `<strong> O seu numero é: ${n}</strong><br />`; 
+      document.body.innerHTML += `Raiz quadrada: ${n ** 0.5}<br />`;
+      document.body.innerHTML += `${n} é inteiro: ${Number.isInteger(n)}<br />`;
+      document.body.innerHTML += `É NaN: ${Number.isNaN(n)}<br />`    
+      document.body.innerHTML += `Arredondando para baixo: ${n = Math.floor(n)}<br />`;
+      document.body.innerHTML += `Arredondando para cima: ${n = Math.ceil(n)}<br />`;
+      document.body.innerHTML += `Com duas casas decimais: ${n.toFixed(2)}<br />`;
+    </script>
+</body>
+</html>
